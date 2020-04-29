@@ -43,7 +43,7 @@ let credits = 23580;
 let pricePerDroid = 3000;
 let totalPrice;
 
-let amountOfDroids = prompt("Желаемое количество дроидов");
+let amountOfDroids = JSON.parse(prompt("Желаемое количество дроидов"));
 
 if (amountOfDroids === null) {
   console.log("Отменено пользователем!");
@@ -97,7 +97,7 @@ let totalAmount = 0;
 
 do {
   totalAmount = totalAmount + input;
-  input = prompt("Введите число");
+  input = JSON.parse(prompt("Введите число"));
 } while (input !== null);
 
 alert(`Общая сумма чисел равна ${totalAmount}`);
