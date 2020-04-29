@@ -98,6 +98,6 @@ let totalAmount = 0;
 do {
   totalAmount = totalAmount + input;
   input = prompt("Введите число");
-} while (response !== null);
+} while (input !== null);
 
 alert(`Общая сумма чисел равна ${totalAmount}`);
