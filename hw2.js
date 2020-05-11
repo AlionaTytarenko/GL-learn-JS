@@ -57,10 +57,11 @@ const calculateEngravingPrice = function(message, pricePerWord) {
   //Task 4
 
   const formatString = function(string) {
-    if (string.split('').length >= 40) {
-        string = string.slice(0, 41).concat('...');
+    let result;
+    if (string.length > 40) {
+        result = string.slice(0, 41).concat('...');
     }
-    return string;
+    return result;
   };
   
 
